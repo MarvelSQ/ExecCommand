@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>ExecCommand</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <style>
+  html,body{
+    height: 100%;
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+  .tool{
+    flex-grow: 0;
+    text-align: center;
+  }
+  @media screen and (max-width:600px) {
+    .editor {
+      margin: 10px;
+    }
+  }
+  @media screen and (min-width:601px) {
+    .editor {
+      width: 580px;
+      margin: 10px auto 20px;
+    }
+  }
+  .editor{
+    flex-grow: 1;
+    min-height: 100px;
+    padding: 10px;
+    border: 1px solid #888;
+    overflow: scroll;
+    outline: none;
+  }
+  .editor img{
+    max-width: 100%;
+  }
+  .editor img:hover{
+    max-width: 100%;
+    cursor: nw-resize;
+    border: 4px solid #787878;
+    box-sizing: border-box;
+  }
+  </style>
+</head>
+<body>
+  <div class="tool">
+  <div id="command"></div>
+  <div id="inputs"></div>
+  <div id="selects"></div>
+</div>
+  <div contenteditable="true" class="editor"><div style="text-align: center;"><span style="font-size: -webkit-xxx-large;">Sun Qiang</span></div><div><hr><div><div style="text-align: center;"><span style="font-size: xx-large;">web front-end engineer</span></div><div style="text-align: center;"><font size="5">sun1993hlj@hotmail.com</font></div><div><hr></div><div style="text-align: center;">language</div><div style="text-align: center;">JavaScript,ES6,Html5 + Css3</div></div></div><div style="text-align: center;"><br></div><div style="text-align: center; ">framework</div><div style="text-align: center; ">VueJs, query</div><div style="text-align: center; "><br></div><div><div style="text-align: center;">tool</div><div style="text-align: center;">ESlint, Webpack,Babel, Npm</div></div><div style="text-align: center;"><br></div><div><div style="text-align: center;">env</div><div style="text-align: center;">MacOs</div></div><div style="text-align: center;"><br></div><div><div style="text-align: center;">editor</div><div style="text-align: center;">Atom, Webstorm</div></div><div style="text-align: center;"><br></div><div><div style="text-align: center;">version control</div><div style="text-align: center;">Git</div></div></div>
+  <script src="test.js"></script>
+</body>
+</html>
